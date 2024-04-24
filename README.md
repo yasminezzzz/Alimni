@@ -4,4 +4,4 @@ an education plkateform
 
 #### License
 
-mit
+mit# Alimni
