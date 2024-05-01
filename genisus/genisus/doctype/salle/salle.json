@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-07 06:08:59.903074",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_xxi2",
+  "salle_name",
+  "availability"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_xxi2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "salle_name",
+   "fieldtype": "Data",
+   "label": "salle_name"
+  },
+  {
+   "fieldname": "availability",
+   "fieldtype": "Data",
+   "label": "availability"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-07 06:10:31.137157",
+ "modified_by": "Administrator",
+ "module": "genisus",
+ "name": "salle",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

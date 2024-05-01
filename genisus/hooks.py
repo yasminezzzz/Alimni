@@ -1,9 +1,11 @@
+from genisus.route import routes 
 app_name = "genisus"
 app_title = "genisus"
 app_publisher = "yamsine"
 app_description = "an education plkateform"
 app_email = "yasmineslema9122001@gmail.com"
 app_license = "mit"
+
 # required_apps = []
 
 # Includes in <head>
@@ -48,7 +50,7 @@ app_license = "mit"
 # role_home_page = {
 # 	"Role": "home_page"
 # }
-
+website_route_rules = routes
 # Generators
 # ----------
 

@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{identity}-{offer}",
+ "creation": "2024-04-05 09:38:38.585769",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "last_name",
+  "identity",
+  "phone_number",
+  "level",
+  "birthday_date",
+  "email",
+  "password",
+  "offer",
+  "payment_status",
+  "parent_firstname",
+  "parent_lastname"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "first_name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "last_name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "identity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "identity",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "phone_number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "level",
+   "fieldtype": "Select",
+   "label": "level",
+   "options": "1 \u00e9re ann\u00e9e\n2 \u00e9me ann\u00e9e\n3 \u00e9me ann\u00e9e\n4 \u00e9me  ann\u00e9e\n5 \u00e9me ann\u00e9e\n6 \u00e9me ann\u00e9e",
+   "reqd": 1
+  },
+  {
+   "fieldname": "birthday_date",
+   "fieldtype": "Date",
+   "label": "birthday_date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "label": "password",
+   "reqd": 1
+  },
+  {
+   "fieldname": "offer",
+   "fieldtype": "Link",
+   "label": "offer",
+   "options": "offer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Data",
+   "label": "payment_Status"
+  },
+  {
+   "fieldname": "parent_firstname",
+   "fieldtype": "Data",
+   "label": "parent_firstname"
+  },
+  {
+   "fieldname": "parent_lastname",
+   "fieldtype": "Data",
+   "label": "parent_lastname"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "offer",
+   "link_fieldname": "offer_name"
+  }
+ ],
+ "modified": "2024-04-25 15:03:56.521173",
+ "modified_by": "Administrator",
+ "module": "genisus",
+ "name": "student",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

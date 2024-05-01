@@ -1,0 +1,15 @@
+{% extends 'templates/base.html' %}
+
+{% block title %}Offer Details{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row"> 
+        <div class="col-md-12 offer-title text-center">
+            <h2 style="color: rgb(124, 171, 233);">{{ offer.offer_name }}</h2>
+            <p>{{ offer.description }}</p>
+            <p>{{ offer.imagedescription }}</p>
+        </div> 
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-06 22:07:55.561249",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "offer_name",
+  "start_date",
+  "end_date",
+  "image",
+  "level",
+  "enrollement_max",
+  "status",
+  "price",
+  "details",
+  "subjects",
+  "enrollement_count",
+  "description",
+  "imagedescription",
+  "class"
+ ],
+ "fields": [
+  {
+   "fieldname": "offer_name",
+   "fieldtype": "Data",
+   "label": "offer_name"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "start_date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "end_date"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "image"
+  },
+  {
+   "fieldname": "level",
+   "fieldtype": "Select",
+   "label": "level",
+   "options": "1 \u00e9re ann\u00e9e\n2 \u00e9me ann\u00e9e\n3 \u00e9me ann\u00e9e\n4 \u00e9me  ann\u00e9e\n5 \u00e9me ann\u00e9e\n6 \u00e9me ann\u00e9e"
+  },
+  {
+   "fieldname": "enrollement_max",
+   "fieldtype": "Int",
+   "label": "enrollement_max"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status",
+   "options": "online\npresentiel"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Float",
+   "label": "price"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Table MultiSelect",
+   "label": "details",
+   "options": "details"
+  },
+  {
+   "fieldname": "subjects",
+   "fieldtype": "Table MultiSelect",
+   "label": "subjects",
+   "options": "subject"
+  },
+  {
+   "fieldname": "enrollement_count",
+   "fieldtype": "Int",
+   "label": "enrollement_count"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "description"
+  },
+  {
+   "fieldname": "imagedescription",
+   "fieldtype": "Attach Image",
+   "label": "imagedescription"
+  },
+  {
+   "fieldname": "class",
+   "fieldtype": "Select",
+   "label": "class",
+   "options": "premium class\nfirst class"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "student",
+   "link_fieldname": "identity"
+  }
+ ],
+ "modified": "2024-04-29 16:49:08.829781",
+ "modified_by": "Administrator",
+ "module": "genisus",
+ "name": "offer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

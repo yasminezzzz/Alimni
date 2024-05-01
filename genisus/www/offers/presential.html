@@ -1,0 +1,65 @@
+{% extends 'templates/base.html' %}
+
+{% block title %}My Offers{% endblock %}
+
+{% block content %}
+<style>
+    .offer-img {
+        width: 300px;
+        height: 200px; 
+        object-fit: cover; 
+    }
+</style>
+<style>
+    body {
+        background-image: url('https://t3.ftcdn.net/jpg/04/12/82/16/360_F_412821610_95RpjzPXCE2LiWGVShIUCGJSktkJQh6P.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .card-container {
+        margin-top: 100; 
+    }
+</style>
+<div class="container">
+    <div class="row"> 
+        <div class="col-md-12 offer-title text-center">
+            <h2 style="color: rgb(124, 171, 233);">Our Offers</h2>
+            <h5>Start your path to success. Enjoy the best educational content and continuous support throughout the school year through our <span class="text-primary">various offers</span>.</h5> 
+        </div> 
+    </div>
+</div>
+<style>
+    .card {
+        background-color: transparent;
+        border-color: rgb(135, 137, 236);
+        border-width: 4px; 
+    }
+</style>          
+<div class="container card-container"> 
+    <div class="row">
+        {% for p in presential %}
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{{p.offer_image }}" class="card-img-top offer-img" alt="{{ p.offer_name }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ p.offer_name }}</h5>
+                    <p class="card-text"><strong>Subjects:</strong> {{ p.subjects }}</p>
+                    <p class="card-text"><strong>Status:</strong> {{ p.offer_status }}</p>
+                    <p class="card-text"><strong>Price:</strong> {{ p.offer_price }}</p>
+                    <p class="card-text"><strong>Start Date:</strong> {{ p.start_date }}</p>
+                    <p class="card-text"><strong>End Date:</strong> {{ p.end_date }}</p>
+                    
+                   
+                    <br>
+                    <a  class="btn btn-primary">View More</a>
+
+
+
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

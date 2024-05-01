@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-29 13:40:29.344302",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_qxrv",
+  "level",
+  "details",
+  "subjects"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_qxrv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Table MultiSelect",
+   "label": "details",
+   "options": "details",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subjects",
+   "fieldtype": "Table MultiSelect",
+   "label": "subjects",
+   "options": "subject",
+   "reqd": 1
+  },
+  {
+   "fieldname": "level",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "level",
+   "options": "1 \u00e9re ann\u00e9e\n2 \u00e9me ann\u00e9e\n3 \u00e9me ann\u00e9e\n4 \u00e9me  ann\u00e9e\n5 \u00e9me ann\u00e9e\n6 \u00e9me ann\u00e9e",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-29 13:44:41.183055",
+ "modified_by": "Administrator",
+ "module": "genisus",
+ "name": "level",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

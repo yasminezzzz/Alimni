@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:subject_name",
+ "creation": "2024-04-05 04:07:00.140621",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "subject_name",
+  "subject_image"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "subject_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "subject_name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "subject_image",
+   "fieldtype": "Attach Image",
+   "label": "subject_image"
+  }
+ ],
+ "image_field": "subject_image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-13 00:20:03.084546",
+ "modified_by": "Administrator",
+ "module": "genisus",
+ "name": "subjects",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

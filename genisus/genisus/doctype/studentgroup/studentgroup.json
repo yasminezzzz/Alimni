@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-07 05:42:39.538807",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_fpg6",
+  "group_name",
+  "offer",
+  "email_group",
+  "getstudents",
+  "students"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_fpg6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "group_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "group_name",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "students",
+   "fieldtype": "Table",
+   "label": "students",
+   "options": "tablestudent"
+  },
+  {
+   "fieldname": "offer",
+   "fieldtype": "Link",
+   "label": "offer",
+   "options": "offer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email_group",
+   "fieldtype": "Data",
+   "label": "email_group"
+  },
+  {
+   "fetch_from": "offer.offer_name",
+   "fieldname": "getstudents",
+   "fieldtype": "Button",
+   "label": "GetStudents"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "student",
+   "link_fieldname": "identity"
+  },
+  {
+   "link_doctype": "offer",
+   "link_fieldname": "offer_name"
+  },
+  {
+   "link_doctype": "offer",
+   "link_fieldname": "enrollement_max"
+  }
+ ],
+ "modified": "2024-04-15 13:10:03.293167",
+ "modified_by": "Administrator",
+ "module": "genisus",
+ "name": "studentgroup",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

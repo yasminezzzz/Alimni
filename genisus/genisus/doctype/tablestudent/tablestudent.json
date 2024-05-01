@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-08 08:35:35.249634",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_xbnq",
+  "student",
+  "student_name",
+  "student_last",
+  "offer_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_xbnq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "student",
+   "fieldtype": "Link",
+   "label": "student",
+   "options": "student"
+  },
+  {
+   "fetch_from": "student.first_name",
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "label": "student__first_name",
+   "translatable": 1
+  },
+  {
+   "fetch_from": "student.last_name",
+   "fieldname": "student_last",
+   "fieldtype": "Data",
+   "label": "student_last_name"
+  },
+  {
+   "fetch_from": "student.offer",
+   "fieldname": "offer_name",
+   "fieldtype": "Data",
+   "label": "offer_name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-15 03:25:11.775293",
+ "modified_by": "Administrator",
+ "module": "genisus",
+ "name": "tablestudent",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
